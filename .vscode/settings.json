@@ -7,5 +7,6 @@
             80
         ]
     },
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "c:\\Users\\LLenk\\Documents\\Workspace\\flask-call-of-cthulhu\\venv\\Scripts\\python.exe",
+    "python.formatting.provider": "black",
 }
