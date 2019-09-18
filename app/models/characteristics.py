@@ -15,6 +15,32 @@ def build_characteristics(
     education,
     move_rate,
 ):
+    """Creates a characteristics object for the character based on their base
+    score.
+
+    Args:
+        strength (int): The whole number representing the percentile score for
+        strength.
+        dexterity (int): The whole number representing the percentile score for
+        dexterity.
+        intelligence (int): The whole number representing the percentile score
+        for intelligence.
+        constitution (int): The whole number representing the percentile score
+        for constitution.
+        apptitude (int): The whole number representing the percentile score for
+        apptitude.
+        power (int): The whole number representing the percentile score for
+        power.
+        size (int): The whole number representing the percentile score for
+        size.
+        education (int): The whole number representing the percentile score for
+        education.
+        move_rate (int): The whole number representing the percentile score for
+        move rate.
+
+    Return:
+        dict: A character's basic characteristic scores with difficulties.
+    """
     return {
         "strength": {
             "normal": strength,

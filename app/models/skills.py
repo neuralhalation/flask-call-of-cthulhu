@@ -53,6 +53,97 @@ def build_skillsheet(
     throw=20,
     track=10,
 ):
+    """Builds the skill list with difficulties for a character.
+
+    Args:
+        accounting (int): The whole number representing the percentile
+        accounting score.
+        anthropology (int): The whole number representing the percentile
+        anthropology score.
+        appraise (int): The whole number representing the percentile
+        appraise score.
+        archeology (int): The whole number representing the percentile
+        archeology score.
+        arts_crafts (int): The whole number representing the percentile
+        arts and crafts score.
+        charm (int): The whole number representing the percentile charm score.
+        climb (int): The whole number representing the percentile climb score.
+        credit_rating (int): The whole number representing the percentile
+        credit rating.
+        cthulhu_mythos (int): The whole number representing the percentile
+        Cthulhu Mythos score.
+        disguise (int): The whole number representing the percentile
+        disguise score.
+        dodge (int): The dodge score.
+        drive_auto (int): The whole number representing the percentile
+        drive automobile score.
+        electric_repair (int): The whole number representing the percentile
+        electric repair score.
+        fast_talk (int): The whole number representing the percentile fast
+        talk score.
+        fighting_brawl (int): The whole number representing the percentile
+        fighting (brawl) score.
+        fighting_other (int): The whole number representing the percentile
+        fighting (other) score.
+        firearms_handgun (int): The whole number representing the percentile
+        firearms (handgun) score.
+        firearms_rifle (int): The whole number representing the percentile
+        firearms (rifle) score.
+        first_aid (int): The whole number representing the percentile first
+        aid score.
+        history (int): The whole number representing the percentile history
+        score.
+        intimidate (int): The whole number representing the percentile
+        history score.
+        jump (int): The whole number representing the percentile jump score.
+        language_other (int): The whole number representing the percentile
+        language (other) score.
+        language_other (int): The whole number representing the percentile
+        language (other) score.
+        law (int): The whole number representing the percentile law score.
+        library_use (int): The whole number representing the percentile
+        library use score.
+        listen (int): The whole number representing the percentile listen
+        score.
+        locksmith (int): The whole number representing the percentile
+        locksmith score.
+        mech_repair (int): The whole number representing the percentile
+        mechanical repair score.
+        medicine (int): The whole number representing the percentile medicine
+        score.
+        natural_world (int): The whole number representing the percentile
+        natural world score.
+        navigate (int): The whole number representing the percentile navigate
+        score.
+        occult (int): The whole number representing the percentile occult
+        score.
+        op_heavy_machinery (int): The whole number representing the percentile
+        operate heavy machinery score.
+        persuade (int): The whole number representing the percentile persuade
+        score.
+        pilot (int): The whole number representing the percentile pilot score.
+        psychology (int): The whole number representing the percentile
+        psychology score.
+        psychoanalysis (int): The whole number representing the percentile
+        psychoanalysis score.
+        ride (int): The whole number representing the percentile ride score.
+        science (int): The whole number representing the percentile science
+        score.
+        sleight_of_hand (int): The whole number representing the percentile
+        sleight of hand score.
+        spot_hidden (int): The whole number representing the percentile spot
+        hidden score.
+        stealth (int): The whole number representing the percentile stealth
+        score.
+        survival (int): The whole number representing the percentile survival
+        score.
+        swim (int): The whole number representing the percentile swim score.
+        throw (int): The whole number representing the percentile throw score.
+        track (int): The whole number representing the percentile track score.
+
+    Return:
+        dict: A character's skills with calculated difficulty.
+    """
     return {
         "accounting": {
             "normal": accounting,
