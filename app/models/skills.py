@@ -145,231 +145,233 @@ def build_skillsheet(
         dict: A character's skills with calculated difficulty.
     """
     return {
-        "accounting": {
-            "normal": accounting,
-            "hard": calculate_hard_difficulty(accounting),
-            "extreme": calculate_extreme_difficulty(accounting),
-        },
-        "anthropology": {
-            "normal": anthropology,
-            "hard": calculate_hard_difficulty(anthropology),
-            "extreme": calculate_extreme_difficulty(anthropology),
-        },
-        "appraise": {
-            "normal": appraise,
-            "hard": calculate_hard_difficulty(appraise),
-            "extreme": calculate_extreme_difficulty(appraise),
-        },
-        "archeology": {
-            "normal": archeology,
-            "hard": calculate_hard_difficulty(archeology),
-            "extreme": calculate_extreme_difficulty(archeology),
-        },
-        "arts_crafts": {
-            "normal": arts_crafts,
-            "hard": calculate_hard_difficulty(arts_crafts),
-            "extreme": calculate_extreme_difficulty(arts_crafts),
-        },
-        "charm": {
-            "normal": charm,
-            "hard": calculate_hard_difficulty(charm),
-            "extreme": calculate_extreme_difficulty(charm),
-        },
-        "climb": {
-            "normal": climb,
-            "hard": calculate_hard_difficulty(climb),
-            "extreme": calculate_extreme_difficulty(climb),
-        },
-        "credit_rating": credit_rating,
-        "cthulu_mythos": {
-            "normal": cthulu_mythos,
-            "hard": calculate_hard_difficulty(cthulu_mythos),
-            "extreme": calculate_extreme_difficulty(cthulu_mythos),
-        },
-        "disguise": {
-            "normal": disguise,
-            "hard": calculate_hard_difficulty(disguise),
-            "extreme": calculate_extreme_difficulty(disguise),
-        },
-        "dodge": calculate_hard_difficulty(dodge),
-        "drive_auto": {
-            "normal": drive_auto,
-            "hard": calculate_hard_difficulty(drive_auto),
-            "extreme": calculate_extreme_difficulty(drive_auto),
-        },
-        "electric_repair": {
-            "normal": electric_repair,
-            "hard": calculate_hard_difficulty(electric_repair),
-            "extreme": calculate_extreme_difficulty(electric_repair),
-        },
-        "fast_talk": {
-            "normal": fast_talk,
-            "hard": calculate_hard_difficulty(fast_talk),
-            "extreme": calculate_extreme_difficulty(fast_talk),
-        },
-        "fighting_brawl": {
-            "normal": fighting_brawl,
-            "hard": calculate_hard_difficulty(fighting_brawl),
-            "extreme": calculate_extreme_difficulty(fighting_brawl),
-        },
-        "fighting_other": {
-            "normal": fighting_other,
-            "hard": calculate_hard_difficulty(fighting_other),
-            "extreme": calculate_extreme_difficulty(fighting_other),
-        },
-        "firearms_handgun": {
-            "normal": firearms_handgun,
-            "hard": calculate_hard_difficulty(firearms_handgun),
-            "extreme": calculate_extreme_difficulty(firearms_handgun),
-        },
-        "firearms_rifle": {
-            "normal": firearms_rifle,
-            "hard": calculate_hard_difficulty(firearms_rifle),
-            "extreme": calculate_extreme_difficulty(firearms_rifle),
-        },
-        "first_aid": {
-            "normal": first_aid,
-            "hard": calculate_hard_difficulty(first_aid),
-            "extreme": calculate_extreme_difficulty(first_aid),
-        },
-        "history": {
-            "normal": history,
-            "hard": calculate_hard_difficulty(history),
-            "extreme": calculate_extreme_difficulty(history),
-        },
-        "intimidate": {
-            "normal": intimidate,
-            "hard": calculate_hard_difficulty(intimidate),
-            "extreme": calculate_extreme_difficulty(intimidate),
-        },
-        "jump": {
-            "normal": jump,
-            "hard": calculate_hard_difficulty(jump),
-            "extreme": calculate_extreme_difficulty(jump),
-        },
-        "language_other": {
-            "normal": language_other,
-            "hard": calculate_hard_difficulty(language_other),
-            "extreme": calculate_extreme_difficulty(language_other),
-        },
-        "language_own": {
-            "normal": language_own,
-            "hard": calculate_hard_difficulty(language_own),
-            "extreme": calculate_extreme_difficulty(language_own),
-        },
-        "law": {
-            "normal": law,
-            "hard": calculate_hard_difficulty(law),
-            "extreme": calculate_extreme_difficulty(law),
-        },
-        "library_use": {
-            "normal": library_use,
-            "hard": calculate_hard_difficulty(library_use),
-            "extreme": calculate_extreme_difficulty(library_use),
-        },
-        "listen": {
-            "normal": listen,
-            "hard": calculate_hard_difficulty(listen),
-            "extreme": calculate_extreme_difficulty(listen),
-        },
-        "locksmith": {
-            "normal": locksmith,
-            "hard": calculate_hard_difficulty(locksmith),
-            "extreme": calculate_extreme_difficulty(locksmith),
-        },
-        "mech_repair": {
-            "normal": mech_repair,
-            "hard": calculate_hard_difficulty(mech_repair),
-            "extreme": calculate_extreme_difficulty(mech_repair),
-        },
-        "medicine": {
-            "normal": medicine,
-            "hard": calculate_hard_difficulty(medicine),
-            "extreme": calculate_extreme_difficulty(medicine),
-        },
-        "natural_world": {
-            "normal": natural_world,
-            "hard": calculate_hard_difficulty(natural_world),
-            "extreme": calculate_extreme_difficulty(natural_world),
-        },
-        "navigate": {
-            "normal": navigate,
-            "hard": calculate_hard_difficulty(navigate),
-            "extreme": calculate_extreme_difficulty(navigate),
-        },
-        "occult": {
-            "normal": occult,
-            "hard": calculate_hard_difficulty(occult),
-            "extreme": calculate_extreme_difficulty(occult),
-        },
-        "op_heavy_machinery": {
-            "normal": op_heavy_machinery,
-            "hard": calculate_hard_difficulty(op_heavy_machinery),
-            "extreme": calculate_extreme_difficulty(op_heavy_machinery),
-        },
-        "persuade": {
-            "normal": persuade,
-            "hard": calculate_hard_difficulty(persuade),
-            "extreme": calculate_extreme_difficulty(persuade),
-        },
-        "pilot": {
-            "normal": pilot,
-            "hard": calculate_hard_difficulty(pilot),
-            "extreme": calculate_extreme_difficulty(pilot),
-        },
-        "psychology": {
-            "normal": psychology,
-            "hard": calculate_hard_difficulty(psychology),
-            "extreme": calculate_extreme_difficulty(psychology),
-        },
-        "psychoanalysis": {
-            "normal": psychoanalysis,
-            "hard": calculate_hard_difficulty(psychoanalysis),
-            "extreme": calculate_extreme_difficulty(psychoanalysis),
-        },
-        "ride": {
-            "normal": ride,
-            "hard": calculate_hard_difficulty(ride),
-            "extreme": calculate_extreme_difficulty(ride),
-        },
-        "science": {
-            "normal": science,
-            "hard": calculate_hard_difficulty(science),
-            "extreme": calculate_extreme_difficulty(science),
-        },
-        "sleight_of_hand": {
-            "normal": sleight_of_hand,
-            "hard": calculate_hard_difficulty(sleight_of_hand),
-            "extreme": calculate_extreme_difficulty(sleight_of_hand),
-        },
-        "spot_hidden": {
-            "normal": spot_hidden,
-            "hard": calculate_hard_difficulty(spot_hidden),
-            "extreme": calculate_extreme_difficulty(spot_hidden),
-        },
-        "stealth": {
-            "normal": stealth,
-            "hard": calculate_hard_difficulty(stealth),
-            "extreme": calculate_extreme_difficulty(stealth),
-        },
-        "survival": {
-            "normal": survival,
-            "hard": calculate_hard_difficulty(survival),
-            "extreme": calculate_extreme_difficulty(survival),
-        },
-        "swim": {
-            "normal": swim,
-            "hard": calculate_hard_difficulty(swim),
-            "extreme": calculate_extreme_difficulty(swim),
-        },
-        "throw": {
-            "normal": throw,
-            "hard": calculate_hard_difficulty(throw),
-            "extreme": calculate_extreme_difficulty(throw),
-        },
-        "track": {
-            "normal": track,
-            "hard": calculate_hard_difficulty(track),
-            "extreme": calculate_extreme_difficulty(track),
-        },
+        "skills": {
+            "accounting": {
+                "normal": accounting,
+                "hard": calculate_hard_difficulty(accounting),
+                "extreme": calculate_extreme_difficulty(accounting),
+            },
+            "anthropology": {
+                "normal": anthropology,
+                "hard": calculate_hard_difficulty(anthropology),
+                "extreme": calculate_extreme_difficulty(anthropology),
+            },
+            "appraise": {
+                "normal": appraise,
+                "hard": calculate_hard_difficulty(appraise),
+                "extreme": calculate_extreme_difficulty(appraise),
+            },
+            "archeology": {
+                "normal": archeology,
+                "hard": calculate_hard_difficulty(archeology),
+                "extreme": calculate_extreme_difficulty(archeology),
+            },
+            "arts_crafts": {
+                "normal": arts_crafts,
+                "hard": calculate_hard_difficulty(arts_crafts),
+                "extreme": calculate_extreme_difficulty(arts_crafts),
+            },
+            "charm": {
+                "normal": charm,
+                "hard": calculate_hard_difficulty(charm),
+                "extreme": calculate_extreme_difficulty(charm),
+            },
+            "climb": {
+                "normal": climb,
+                "hard": calculate_hard_difficulty(climb),
+                "extreme": calculate_extreme_difficulty(climb),
+            },
+            "credit_rating": credit_rating,
+            "cthulu_mythos": {
+                "normal": cthulu_mythos,
+                "hard": calculate_hard_difficulty(cthulu_mythos),
+                "extreme": calculate_extreme_difficulty(cthulu_mythos),
+            },
+            "disguise": {
+                "normal": disguise,
+                "hard": calculate_hard_difficulty(disguise),
+                "extreme": calculate_extreme_difficulty(disguise),
+            },
+            "dodge": calculate_hard_difficulty(dodge),
+            "drive_auto": {
+                "normal": drive_auto,
+                "hard": calculate_hard_difficulty(drive_auto),
+                "extreme": calculate_extreme_difficulty(drive_auto),
+            },
+            "electric_repair": {
+                "normal": electric_repair,
+                "hard": calculate_hard_difficulty(electric_repair),
+                "extreme": calculate_extreme_difficulty(electric_repair),
+            },
+            "fast_talk": {
+                "normal": fast_talk,
+                "hard": calculate_hard_difficulty(fast_talk),
+                "extreme": calculate_extreme_difficulty(fast_talk),
+            },
+            "fighting_brawl": {
+                "normal": fighting_brawl,
+                "hard": calculate_hard_difficulty(fighting_brawl),
+                "extreme": calculate_extreme_difficulty(fighting_brawl),
+            },
+            "fighting_other": {
+                "normal": fighting_other,
+                "hard": calculate_hard_difficulty(fighting_other),
+                "extreme": calculate_extreme_difficulty(fighting_other),
+            },
+            "firearms_handgun": {
+                "normal": firearms_handgun,
+                "hard": calculate_hard_difficulty(firearms_handgun),
+                "extreme": calculate_extreme_difficulty(firearms_handgun),
+            },
+            "firearms_rifle": {
+                "normal": firearms_rifle,
+                "hard": calculate_hard_difficulty(firearms_rifle),
+                "extreme": calculate_extreme_difficulty(firearms_rifle),
+            },
+            "first_aid": {
+                "normal": first_aid,
+                "hard": calculate_hard_difficulty(first_aid),
+                "extreme": calculate_extreme_difficulty(first_aid),
+            },
+            "history": {
+                "normal": history,
+                "hard": calculate_hard_difficulty(history),
+                "extreme": calculate_extreme_difficulty(history),
+            },
+            "intimidate": {
+                "normal": intimidate,
+                "hard": calculate_hard_difficulty(intimidate),
+                "extreme": calculate_extreme_difficulty(intimidate),
+            },
+            "jump": {
+                "normal": jump,
+                "hard": calculate_hard_difficulty(jump),
+                "extreme": calculate_extreme_difficulty(jump),
+            },
+            "language_other": {
+                "normal": language_other,
+                "hard": calculate_hard_difficulty(language_other),
+                "extreme": calculate_extreme_difficulty(language_other),
+            },
+            "language_own": {
+                "normal": language_own,
+                "hard": calculate_hard_difficulty(language_own),
+                "extreme": calculate_extreme_difficulty(language_own),
+            },
+            "law": {
+                "normal": law,
+                "hard": calculate_hard_difficulty(law),
+                "extreme": calculate_extreme_difficulty(law),
+            },
+            "library_use": {
+                "normal": library_use,
+                "hard": calculate_hard_difficulty(library_use),
+                "extreme": calculate_extreme_difficulty(library_use),
+            },
+            "listen": {
+                "normal": listen,
+                "hard": calculate_hard_difficulty(listen),
+                "extreme": calculate_extreme_difficulty(listen),
+            },
+            "locksmith": {
+                "normal": locksmith,
+                "hard": calculate_hard_difficulty(locksmith),
+                "extreme": calculate_extreme_difficulty(locksmith),
+            },
+            "mech_repair": {
+                "normal": mech_repair,
+                "hard": calculate_hard_difficulty(mech_repair),
+                "extreme": calculate_extreme_difficulty(mech_repair),
+            },
+            "medicine": {
+                "normal": medicine,
+                "hard": calculate_hard_difficulty(medicine),
+                "extreme": calculate_extreme_difficulty(medicine),
+            },
+            "natural_world": {
+                "normal": natural_world,
+                "hard": calculate_hard_difficulty(natural_world),
+                "extreme": calculate_extreme_difficulty(natural_world),
+            },
+            "navigate": {
+                "normal": navigate,
+                "hard": calculate_hard_difficulty(navigate),
+                "extreme": calculate_extreme_difficulty(navigate),
+            },
+            "occult": {
+                "normal": occult,
+                "hard": calculate_hard_difficulty(occult),
+                "extreme": calculate_extreme_difficulty(occult),
+            },
+            "op_heavy_machinery": {
+                "normal": op_heavy_machinery,
+                "hard": calculate_hard_difficulty(op_heavy_machinery),
+                "extreme": calculate_extreme_difficulty(op_heavy_machinery),
+            },
+            "persuade": {
+                "normal": persuade,
+                "hard": calculate_hard_difficulty(persuade),
+                "extreme": calculate_extreme_difficulty(persuade),
+            },
+            "pilot": {
+                "normal": pilot,
+                "hard": calculate_hard_difficulty(pilot),
+                "extreme": calculate_extreme_difficulty(pilot),
+            },
+            "psychology": {
+                "normal": psychology,
+                "hard": calculate_hard_difficulty(psychology),
+                "extreme": calculate_extreme_difficulty(psychology),
+            },
+            "psychoanalysis": {
+                "normal": psychoanalysis,
+                "hard": calculate_hard_difficulty(psychoanalysis),
+                "extreme": calculate_extreme_difficulty(psychoanalysis),
+            },
+            "ride": {
+                "normal": ride,
+                "hard": calculate_hard_difficulty(ride),
+                "extreme": calculate_extreme_difficulty(ride),
+            },
+            "science": {
+                "normal": science,
+                "hard": calculate_hard_difficulty(science),
+                "extreme": calculate_extreme_difficulty(science),
+            },
+            "sleight_of_hand": {
+                "normal": sleight_of_hand,
+                "hard": calculate_hard_difficulty(sleight_of_hand),
+                "extreme": calculate_extreme_difficulty(sleight_of_hand),
+            },
+            "spot_hidden": {
+                "normal": spot_hidden,
+                "hard": calculate_hard_difficulty(spot_hidden),
+                "extreme": calculate_extreme_difficulty(spot_hidden),
+            },
+            "stealth": {
+                "normal": stealth,
+                "hard": calculate_hard_difficulty(stealth),
+                "extreme": calculate_extreme_difficulty(stealth),
+            },
+            "survival": {
+                "normal": survival,
+                "hard": calculate_hard_difficulty(survival),
+                "extreme": calculate_extreme_difficulty(survival),
+            },
+            "swim": {
+                "normal": swim,
+                "hard": calculate_hard_difficulty(swim),
+                "extreme": calculate_extreme_difficulty(swim),
+            },
+            "throw": {
+                "normal": throw,
+                "hard": calculate_hard_difficulty(throw),
+                "extreme": calculate_extreme_difficulty(throw),
+            },
+            "track": {
+                "normal": track,
+                "hard": calculate_hard_difficulty(track),
+                "extreme": calculate_extreme_difficulty(track),
+            },
+        }
     }
