@@ -1,9 +1,5 @@
 def inventory_item(name, description, quantity):
-    return {"item": {"name": name, "description": description, "quantity": quantity}}
-
-
-def update_quantity(name, amt, item_list):
-    return [i["item"]["quantity"] + amt for i in item_list if i["item"]["name"] == name]
+    return {"item": {"name": name, "description": description}}
 
 
 def add_inventory_item(item, amt=1, item_list=[]):
