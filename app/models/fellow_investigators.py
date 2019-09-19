@@ -1,3 +1,6 @@
+import app.functions.add_remove as ar
+
+
 def fellow_investigator(char_name, player_name):
     """Creates a new fellow investigator.
 
@@ -8,9 +11,9 @@ def fellow_investigator(char_name, player_name):
     Return:
         dict: A fellow investigator
     """
-    return {
-        "fellow_investigator": {"character_name": char_name, "player_name": player_name}
-    }
+    return ar.new(
+        "fellow_investigator", character_name=char_name, player_name=player_name
+    )
 
 
 def add_fellow_investigators(investigator, investigators=[]):
@@ -24,10 +27,7 @@ def add_fellow_investigators(investigator, investigators=[]):
     Return:
         list: A list of fellow investigators.
     """
-    new_investigators = []
-    if investigator not in investigators:
-        new_investigators = investigators.__add__([investigator])
-    return new_investigators
+    return ar.add_to_list(investigator, investigators)
 
 
 def remove_fellow_investigators(char_name, investigators):
@@ -37,4 +37,6 @@ def remove_fellow_investigators(char_name, investigators):
         char_name (str): The character name to be removed.
         investigators (list): A list of fellow investigators.
     """
-    return [i for i in investigators if i["fellow_investigator"]["name"] != char_name]
+    return ar.remove_by_obj_key_and_val_key(
+        "fellow_investigator", "character_name", char_name, investigators
+    )

@@ -1,3 +1,6 @@
+import app.functions.add_remove as ar
+
+
 def hit_points(current_points, max_points=20):
     """Returns a character's hit points.
 
@@ -8,4 +11,4 @@ def hit_points(current_points, max_points=20):
     Return:
         dict: A character's hit points.
     """
-    return {"hit_points": {"current": current_points, "max": max_points}}
+    return ar.new("hit_points", current=current_points, max=max_points)

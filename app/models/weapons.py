@@ -2,6 +2,7 @@ from app.functions.difficulty_calculator import (
     calculate_hard_difficulty,
     calculate_extreme_difficulty,
 )
+import app.functions.add_remove as ar
 
 
 def add_weapons(weapon, weapons=[]):
@@ -14,10 +15,7 @@ def add_weapons(weapon, weapons=[]):
     Return:
         list: A list of the character's weapon inventory.
     """
-    new_weapons = []
-    if weapon not in weapons:
-        new_weapons = weapons.__add__([weapon])
-    return new_weapons
+    return ar.add_to_list(weapon, weapons)
 
 
 def remove_weapon(weapon_name, weapons):
@@ -30,7 +28,7 @@ def remove_weapon(weapon_name, weapons):
     Return:
         list: A list of the character's weapon inventory.
     """
-    return [w for w in weapons if w["weapon"]["name"] != weapon_name]
+    return ar.remove_by_obj_key_and_val_key("weapon", "name", weapon_name, weapons)
 
 
 def weapon(name, regular, damage, attack_range, attacks, ammo, malfunction):

@@ -1,3 +1,6 @@
+import app.functions.add_remove as ar
+
+
 def sanity(current_points, max_points=99):
     """Creates the sanity score for a character.
 
@@ -8,4 +11,4 @@ def sanity(current_points, max_points=99):
     Return:
         dict: The sanity score for a character.
     """
-    return {"sanity": {"current": current_points, "max": max_points}}
+    return ar.new("sanity", current=current_points, max=max_points)

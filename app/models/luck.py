@@ -1,3 +1,6 @@
+import app.functions.add_remove as ar
+
+
 def luck(current_points, max_points=99):
     """Generates the luck score for a character.
 
@@ -8,4 +11,4 @@ def luck(current_points, max_points=99):
     Return:
         dict: The luck score of a character.
     """
-    return {"luck": {"current": current_points, "max": max_points}}
+    return ar.new("luck", current=current_points, max=max_points)

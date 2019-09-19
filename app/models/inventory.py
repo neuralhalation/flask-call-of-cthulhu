@@ -1,3 +1,6 @@
+import app.functions.add_remove as ar
+
+
 def inventory_item(name, description):
     """Creates an inventory item.
 
@@ -8,7 +11,7 @@ def inventory_item(name, description):
     Return:
         dict: An inventory item.
     """
-    return {"item": {"name": name, "description": description}}
+    return ar.new("item", name=name, description=description)
 
 
 def add_inventory_item(item, item_list=[]):
@@ -21,10 +24,7 @@ def add_inventory_item(item, item_list=[]):
     Return:
         list: A list of inventory items.
     """
-    new_inventory = []
-    if item not in item_list:
-        new_inventory = item_list.__add__([item])
-    return new_inventory
+    return ar.add_to_list(item, item_list)
 
 
 def remove_inventory_item(name, item_list):
@@ -37,4 +37,4 @@ def remove_inventory_item(name, item_list):
     Return:
         list: A list of inventory items.
     """
-    return [i for i in item_list if i["item"]["name"] != name]
+    return ar.remove_by_obj_key_and_val_key("item", "name", name, item_list)

@@ -14,7 +14,7 @@ def backstory(
 
     Args:
         personal_description (str): The description of the character.
-        ideology_beliefsf (str): The beliefs of the character.
+        ideology_beliefs (str): The beliefs of the character.
         significant_people (list): A list of people the character knows.
         meaningful_locations (list): A list of locations the character knows.
         treasured_possessions (list): A list of items.
