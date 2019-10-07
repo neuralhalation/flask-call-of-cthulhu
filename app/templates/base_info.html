@@ -1,0 +1,15 @@
+{% extends "main.html" %} {% block content %}
+<div class="base-info">
+  <h4>Base Info</h4>
+  <form action="" method="POST">
+    <p>{{ form.character_name }}</p>
+    <p>{{ form.player_name }}</p>
+    <p>{{ form.occupation }}</p>
+    <p>{{ form.age }}</p>
+    <p>{{ form.gender }}</p>
+    <p>{{ form.residence }}</p>
+    <p>{{ form.birthplace }}</p>
+    <p>{{ form.submit() }}</p>
+  </form>
+</div>
+{% endblock %}

@@ -303,7 +303,7 @@ def build_skillsheet(
                 "hard": calculate_hard_difficulty(occult),
                 "extreme": calculate_extreme_difficulty(occult),
             },
-            "op_heavy_machinery": {
+            "operate_heavy_machinery": {
                 "normal": op_heavy_machinery,
                 "hard": calculate_hard_difficulty(op_heavy_machinery),
                 "extreme": calculate_extreme_difficulty(op_heavy_machinery),

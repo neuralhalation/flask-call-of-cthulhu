@@ -1,8 +1,13 @@
 <html>
-    <head>
-        <title>{{ title }} - Call of Cthulhu</title>
-    </head>
-    <body>
-        <h1>Hello {{ user.username }}</h1>
-    </body>
+  <head>
+    <title>{{ title }} - Call of Cthulhu</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="/index">Home</a>
+      <a href="/base-info">Base Info</a>
+      <a href="/characteristics">Characteristics</a>
+    </div>
+    {% block content %} {% endblock %}
+  </body>
 </html>

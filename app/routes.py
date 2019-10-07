@@ -1,44 +1,27 @@
-from flask import render_template
+from flask import render_template, flash, redirect
 from app import app
-from app.forms.character_sheet import BackstoryForm
+from app.forms.character_sheet import BaseInfoForm, CharacteristicsForm
 
 
 @app.route("/")
 @app.route("/index")
 def index():
-    user = {"username": "Lyon"}
-    return render_template("main.html", title="Home", user=user)
+    return render_template("main.html", title="Home")
 
 
-@app.route("/backstory")
-def new():
-    sig_people = []
-    meaningful_locations = []
-    treasured_possessions = []
-    traits = []
-    injuries = []
-    phobias = []
-    arcane_items = []
-    encounters = []
+@app.route("/base-info")
+def base_info():
+    form = BaseInfoForm()
+    if form.validate_on_submit():
+        flash(f"Time to roll for characteristics, {form.character_name}.")
+        return redirect("/characteristics")
+    return render_template("base_info.html", form=form, title="Basic Info")
 
-    def add_to_list(entry, old_list):
-        new_list = old_list.__add__(entry)
-        return new_list
 
-    def add_significant_people():
-        new_people = add_to_list({"name": "", "description": ""}, sig_people)
-        form = BackstoryForm(significant_people=new_people)
-        return render_template("backstory.html", form=form)
-
-    form = BackstoryForm(
-        significant_people=sig_people,
-        meaningful_locations=meaningful_locations,
-        treasured_possessions=treasured_possessions,
-        traits=traits,
-        injuries_and_scars=injuries,
-        phobias_and_manias=phobias,
-        arcane_items=arcane_items,
-        encounters=encounters,
-    )
-    return render_template("backstory.html", form=form)
-
+@app.route("/characteristics")
+def characteristics():
+    form = CharacteristicsForm()
+    if form.validate_on_submit():
+        flash(f"Pray to the elder gods your stats are accurate.")
+        return redirect("/skills")
+    return render_template("characteristics.html", form=form, title="Characteristics")
